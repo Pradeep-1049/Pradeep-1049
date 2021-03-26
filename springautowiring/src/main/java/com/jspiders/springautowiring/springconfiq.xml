@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context 
+ http://www.springframework.org/schema/context/spring-context.xsd" 
+ xmlns:p="http://www.springframework.org/schema/p"  
+ xmlns:c="http://www.springframework.org/schema/c" 
+xmlns:context="http://www.springframework.org/schema/context" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://www.springframework.org/schema/beans">
+ 
+ <context:annotation-config/>
+ 
+ <bean name="address" class="com.jspiders.springautowiring.Address" p:pincode="560004" p:state="Tamil Nadu" 
+ p:city="Tirchy"/>
+ 
+ <bean name="employee" class="com.jspiders.springautowiring.Employee" p:empno="101" 
+ p:empname="Pradeep" p:salary="89398.88"  />
+  
+  </beans>
