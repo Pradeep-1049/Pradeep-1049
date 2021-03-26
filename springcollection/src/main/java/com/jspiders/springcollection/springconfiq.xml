@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context 
+ http://www.springframework.org/schema/context/spring-context.xsd" 
+ xmlns:p="http://www.springframework.org/schema/p" 
+xmlns:context="http://www.springframework.org/schema/context" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://www.springframework.org/schema/beans">
+ 
+ 
+ <bean name="student" class="com.jspiders.springcollection.Student">
+    <property name="regno" value="111"/>  
+    <property name="name" value="Blake"/>
+    <property name="marks" value="87.14"/>
+    <property name="subjects">
+      <list>
+       <value>Core Java</value>
+       <value>Advance Java</value>
+       <value>SQL</value>
+       <value>Web Technologies</value>  
+     </list>
+    </property>
+    
+ </bean>
+ 
+  </beans>
